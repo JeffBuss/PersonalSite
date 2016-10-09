@@ -1,28 +1,26 @@
 body {
   font-family: 'Titillium Web', sans-serif;
   background-color: #F5F5F5;
-  text-align: center;
 }
 
 .logo {
   height: 200px;
   width: 200px;
-  margin: 20px 20px;
 }
 
-nav ul {
-  margin-bottom: 20px;
-  display: inline;
+header {
+  border-bottom: 2px solid #dadada;
 }
+
 nav li {
   font-size: 30px;
   font-weight: bold;
-  cursor: pointer;
   text-decoration: none;
   color: black;
   padding: 30px;
-  display: inline;
-  vertical-align: baseline;
+  display: inline-block;
+  vertical-align: middle;
+  text-shadow: 2px 2px #dadada;
 }
 
 nav li a {
@@ -31,7 +29,7 @@ nav li a {
 }
 
 a:hover {
-  color: #50FFE5;
+  color: #836DE8;
   cursor: pointer;
 }
 
@@ -41,21 +39,34 @@ h1 {
   border-bottom: 20px white solid;
 }
 
-.social {
-  height: 40px;
-  width: 40px;
+h1 img {
+  height: 300px;
+  width: 300px;
+  border: 4px solid black;
+  border-radius: 5%;
+  float: right;
+  display: inline-block;
+  position: relative;
 }
 
+.social {
+  height: 30px;
+  width: 30px;
+}
+footer {
+  text-align: center;
+  border: 2px solid #dadada;
+}
 footer li {
   display: inline-block;
   margin: 20px;
   padding: 20px;
   text-align: center;
-  border: 2px solid #000;
+  border: 4px solid #000;
   border-radius: 50%
 }
 
 footer li:hover {
-  border: 2px solid #50FFE5;
+  border: 4px solid #836DE8;
   border-radius: 50%
 }
