@@ -1,0 +1,36 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: url('../img/metaltexture.jpg') no-repeat;
+  background-size: cover;
+}
+
+nav {
+  font-size: 28px;
+  margin: 25px 0px;
+  font-family: helvetica;
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  padding: 20px 0;
+}
+
+h1 img {
+  height: 200px;
+  width: 200px;
+  padding: 20px 20px;
+}
+
+.social {
+  height: 40px;
+  width: 40px;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 20px 20px;
+}
