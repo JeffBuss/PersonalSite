@@ -1,46 +1,44 @@
-html {
-  border: 20px white solid;
-}
 body {
   font-family: 'Titillium Web', sans-serif;
   background-color: #F5F5F5;
-  background-size: cover;
+  text-align: center;
 }
 
 .logo {
   height: 200px;
   width: 200px;
-  position: relative;
-  text-align: left;
+  margin: 20px 20px;
 }
 
 nav ul {
-  font-size: 28px;
-  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 20px;
+  display: inline;
+}
+nav li {
+  font-size: 30px;
   font-weight: bold;
-  text-decoration: none;
-  text-align: right;
-  color: white;
   cursor: pointer;
-  padding: 20px;
-  display: block;
-  float: right;
-  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+  display: inline;
+  vertical-align: baseline;
 }
 
-nav li {
-  display: block;
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #50FFE5;
+  cursor: pointer;
 }
 
 h1 {
-  border: 20px white solid;
-}
-
-h1 img {
-  height: 200px;
-  width: 200px;
-  padding: 20px 20px;
-  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  border-top: 20px white solid;
+  border-bottom: 20px white solid;
 }
 
 .social {
@@ -50,11 +48,14 @@ h1 img {
 
 footer li {
   display: inline-block;
-  margin: 0 15px;
-  padding: 20px 20px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
+  border: 2px solid #000;
+  border-radius: 50%
 }
 
-footer p {
-  text-align: center;
+footer li:hover {
+  border: 2px solid #50FFE5;
+  border-radius: 50%
 }
