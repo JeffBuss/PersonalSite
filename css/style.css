@@ -1,27 +1,46 @@
-
+html {
+  border: 20px white solid;
+}
 body {
-  font-family: sans-serif;
-  text-align: center;
-  background: url('../img/metaltexture.jpg') no-repeat;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #F5F5F5;
   background-size: cover;
 }
 
-nav {
-  font-size: 28px;
-  margin: 25px 0px;
-  font-family: helvetica;
-  text-decoration: none;
-  color: white;
+.logo {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  text-align: left;
 }
 
-header {
-  padding: 20px 0;
+nav ul {
+  font-size: 28px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  display: block;
+  float: right;
+  list-style-type: none;
+}
+
+nav li {
+  display: block;
+}
+
+h1 {
+  border: 20px white solid;
 }
 
 h1 img {
   height: 200px;
   width: 200px;
   padding: 20px 20px;
+  position: relative;
 }
 
 .social {
@@ -33,4 +52,9 @@ footer li {
   display: inline-block;
   margin: 0 15px;
   padding: 20px 20px;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
 }
