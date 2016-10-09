@@ -1,15 +1,16 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
-  background-color: #F5F5F5;
+font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
   height: 150px;
   width: 150px;
+  margin-left: 30px;
 }
 
 header {
   border-bottom: 2px solid #dadada;
+  background-color: #F5F5F5;
 }
 
 nav li {
@@ -28,16 +29,13 @@ nav li a {
   color: black;
 }
 
-a:hover {
-  color: #836DE8;
+nav a:hover {
   cursor: pointer;
+  color: #836DE8;
+  text-decoration: underline;
 }
 
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  border: 20px white solid;
-}
-
+/*
 h1 img {
   height: 300px;
   width: 300px;
@@ -48,11 +46,51 @@ h1 img {
   position: relative;
   margin: 20px;
 }
+*/
+.main {
+  display: inline-block;
+  border: 2px #dadada solid;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.title {
+  width: 40%;
+  float: left;
+}
+.title h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.title img {
+  height: 75px;
+  width: 75px;
+}
+
+.title h1:after {
+  content: " ";
+  display: block;
+  width: 75px;
+  margin: 10px 0;
+  border: 3px solid #000;
+}
+
+.content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  line-height: 34px;
+  width: 60%;
+  float: right;
+}
 
 .social {
   height: 30px;
   width: 30px;
 }
+
 footer {
   text-align: center;
   border: 2px solid #dadada;
