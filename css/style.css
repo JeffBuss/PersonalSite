@@ -2,30 +2,28 @@ body {
 font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
-  height: 150px;
-  width: 150px;
-  margin-left: 20px;
-}
-
 header {
   border-bottom: 2px solid #dadada;
   background-color: #F5F5F5;
   margin-bottom: 10px;
 }
 
+.logo {
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+}
+
 nav li {
-  font-size: 38px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
   padding: 20px;
   display: inline-block;
   vertical-align: middle;
   text-shadow: 2px 2px #dadada;
 }
 
-nav li a {
+nav a {
+  font-size: 38px;
+  font-weight: bold;
   text-decoration: none;
   color: black;
 }
@@ -33,7 +31,6 @@ nav li a {
 nav a:hover {
   cursor: pointer;
   color: #836DE8;
-  text-decoration: underline;
 }
 
 /*Not super pleased with how the header scales
@@ -101,7 +98,7 @@ cool to me, thanks google.*/
 
 .content p {
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: .75px;
   line-height: 28px;
 }
 
@@ -117,6 +114,9 @@ cool to me, thanks google.*/
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 10px;
+}
+.big {
+  font-weight: bold;
 }
 
 .headshot {
@@ -137,6 +137,7 @@ cool to me, thanks google.*/
 footer {
   text-align: center;
   border: 2px solid #dadada;
+  margin-top: 10px;
 }
 
 footer img {

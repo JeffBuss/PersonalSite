@@ -8,13 +8,20 @@
 
     <body>
 
+      <!--
+Is it an issue to have extra text families
+in the link above for future use? I seem to
+recall google warning me things might be
+slower since I have 6 fonts.
+      -->
+
       <header>
         <nav>
           <ul>
-            <li><a href="http://bus.com/"><img src="img/blogo.png" onmouseover="this.src='img/blogohoverg.png'" onmouseout="this.src='img/blogo.png'" class="logo" /></a></li>
-            <li><a href="pages/projects.html">PROJECTS</a>
-            <li><a href="pages/experience.html">EXPERIENCE</a>
-            <li><a href="pages/contact.html">CONTACT</a>
+            <li><a href="#about"><img src="img/blogo.png" onmouseover="this.src='img/blogohoverg.png'" onmouseout="this.src='img/blogo.png'" class="logo" /></a></li>
+            <li><a href="#projects">PROJECTS</a>
+            <li><a href="#experience">EXPERIENCE</a>
+            <li><a href="#footer">CONTACT</a>
           </ul>
         </nav>
       </header>
@@ -27,11 +34,6 @@ know what it is. Having both nav and ul containing everything
 seemed like overkill, but it finally worked after banging my
 head against the wall for far too long so I left it.
 
-Also, I still need to set up links from the header to the
-different sections on the page. Right now it's set up as
-if this is a mult-page site. I switched gears yesterday,
-deleted everything, and decided to create a single-page site.
-
 Sidenote: the logo was heavily influenced by my love of hexagons and hatred
 for Beats by Dre headphones. It's borderline plagiarism in its
 current state, please don't kick me out of Turing. Let Dre's
@@ -43,7 +45,7 @@ enough for him to care.
 About
       -->
 
-      <div class="main">
+      <div id="about" class="main">
         <div class="title">
           <h1>ABOUT</h1>
           <img src="img/user.png" />
@@ -56,7 +58,10 @@ About
       </div>
 
       <!--
-Definitely want to improve the copy on my bio, as well as add
+Should I switch h1 and h2? I seem to have better keywords
+for search engines throughout the page w/in h2s currently.
+
+Also definitely want to improve the copy on my bio, as well as add
 to it. Want to keep things short and simple, but this is
 poorly worded and vague. Still conveys some information about
 my past, my mindset, and my goals in a couple sentences though.
@@ -66,7 +71,7 @@ my past, my mindset, and my goals in a couple sentences though.
 Projects
       -->
 
-      <div class="main">
+      <div id="projects" class="main">
         <div class="title">
           <h1>PROJECTS</h1>
           <img src="img/folder.png" />
@@ -98,7 +103,7 @@ Projects
 Experience
       -->
 
-      <div class="main">
+      <div id="experience" class="main">
         <div class="title">
           <h1>EXPERIENCE</h1>
           <img src="img/document.png" />
@@ -106,9 +111,9 @@ Experience
         <div class="content">
           <div class="box">
             <a href="http://instagram.com/nightshiftdenver" target="_blank"><img src="img/ns-bw.jpg" class="work" ></a>
-            <h2>Systems | Cook</h2>
+            <h2>Cook | Systems</h2>
             <p class="big">Night Shift</p>
-            <p class="lil">Denver</p>
+            <p class="lil">Denver | 2015-2016</p>
           </div>
         </div>
         <div class="content">
@@ -116,15 +121,15 @@ Experience
             <a href="https://www.instagram.com/chasethewhitewhale/" target="_blank"><img src="img/twwr.png" class="work" ></a>
             <h2>Food Menu | Systems | Network Admin | Bartender</h2>
             <p class="big">The White Whale Room</p>
-            <p class="lil">Denver</p>
+            <p class="lil">Denver | 2015-2016</p>
           </div>
         </div>
         <div class="content">
           <div class="box">
             <a href="https://www.facebook.com/LetsGetDigitalBlog/" target="_blank"><img src="img/lgd.png" class="work"></a>
-            <h2>Owner | Booking | Web Dev</h2>
+            <h2>Owner | Booking | Blogger | Web Dev</h2>
             <p class="big">Let's Get Digital</p>
-            <p class="lil">Minneapolis/Madison/Chicago/Boulder</p>
+            <p class="lil">Minneapolis/Madison/Chicago/Boulder | 2007-2012</p>
           </div>
         </div>
       </div>
@@ -146,7 +151,7 @@ extend to the right border regardless of how much text is in them.
 Contact (contained in the footer)
       -->
 
-      <footer>
+      <footer id="footer">
         <ul>
           <li><a href="https://www.facebook.com/JeffBuss" target="_blank" ><img src="img/facebook-letter-logo.png" class="social" /></a></li>
           <li><a href="https://twitter.com/letsgetdigital" target="_blank" ><img src="img/twitter-letter-logo.png" class="social" /></a></li>
