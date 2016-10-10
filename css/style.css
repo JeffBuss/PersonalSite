@@ -5,7 +5,7 @@ font-family: 'Open Sans', sans-serif;
 .logo {
   height: 150px;
   width: 150px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 header {
@@ -15,11 +15,11 @@ header {
 }
 
 nav li {
-  font-size: 30px;
+  font-size: 38px;
   font-weight: bold;
   text-decoration: none;
   color: black;
-  padding: 30px;
+  padding: 20px;
   display: inline-block;
   vertical-align: middle;
   text-shadow: 2px 2px #dadada;
@@ -36,33 +36,36 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/*
-h1 img {
-  height: 300px;
-  width: 300px;
-  border: 4px solid black;
-  border-radius: 5%;
-  float: right;
-  display: inline-block;
-  position: relative;
-  margin: 20px;
-}
-*/
+/*Not super pleased with how the header scales
+at narrower screen widths on desktop browsers,
+looks fine on mobile though. I'll likely go with
+a totally different design for the header, but
+this works for now*/
+
 .main {
   display: inline-block;
   border: 2px #dadada solid;
   margin: 10px 20px;
-  padding: 20px;
+  padding: 30px;
   background-color: #fafafa;
   border-radius: 10px;
+  width: calc(100% - 100px);
 }
+
+/* Props to Justin Wood for figuring out
+the width: calc part above. It's still kind of janky,
+but works to keep the .main sections at full width
+at most screen sizes. Need to figure out the proper
+way to fix the issue.
+*/
 
 .title {
   width: 40%;
   float: left;
 }
+
 .title h1 {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: bold;
 }
 
@@ -78,6 +81,13 @@ h1 img {
   margin: 10px 0;
   border: 3px solid #000;
 }
+
+/* IDK if the code above is the best practice,
+but I couldn't figure out a better way to get
+an "underline" that didn't span the whole width
+of the text and was vertically centered between
+the title and icon w/o using an image. Seemed
+cool to me, thanks google.*/
 
 .content {
   width: 60%;
@@ -95,11 +105,16 @@ h1 img {
   line-height: 28px;
 }
 
+.work {
+  height: 100px;
+  width: 100px;
+}
+
 .box {
   display: inline-block;
   border: 2px #dadada solid;
   padding: 20px;
-  margin: 10px;
+  margin-bottom: 20px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -116,26 +131,49 @@ h1 img {
 .social {
   height: 30px;
   width: 30px;
+  border-radius: 50%;
 }
 
 footer {
   text-align: center;
   border: 2px solid #dadada;
 }
-footer li {
-  display: inline-block;
-  margin: 20px;
+
+footer img {
   padding: 20px;
   text-align: center;
   border: 4px solid #000;
-  border-radius: 50%
+  cursor: pointer;
 }
 
-footer li:hover {
+footer li {
+  display: inline-block;
+  margin: 20px;
+}
+
+footer img:hover {
   border: 4px solid #836DE8;
-  border-radius: 50%
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 footer p {
   margin-bottom: 20px;
 }
+
+/* Props again to Justin Wood for helping
+me get the social links clickable across
+the entire diamater of the circle border
+instead of just on top of the icons. The
+social images get cut off a bit, so I still
+need to fix that - perhaps with a transparency
+of some sort, it's too late for me to
+lose sleep over though lol */
+
+/*Closing notes: I didn't have as much time as
+I was hoping to go through this code line-by-line
+to make sure I understood absolutely everything,
+and it was all necessary. I'm happy with the end
+result, but I'm sure there is plenty of
+inefficient/unecessary code in here. It was a ton
+of trial and error :) */

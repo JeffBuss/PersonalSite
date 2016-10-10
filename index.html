@@ -12,18 +12,39 @@
         <nav>
           <ul>
             <li><a href="http://bus.com/"><img src="img/blogo.png" onmouseover="this.src='img/blogohoverg.png'" onmouseout="this.src='img/blogo.png'" class="logo" /></a></li>
-            <li><a href="pages/projects.html">Projects</a>
-            <li><a href="pages/experience.html">Experience</a>
-            <li><a href="pages/contact.html">Contact</a>
+            <li><a href="pages/projects.html">PROJECTS</a>
+            <li><a href="pages/experience.html">EXPERIENCE</a>
+            <li><a href="pages/contact.html">CONTACT</a>
           </ul>
         </nav>
       </header>
 
+      <!--
+I originally tried to set up the header w/o using a list, but
+couldn't figure out getting everything to line up. I'm sure
+there's a more efficient way to do this, and would love to
+know what it is. Having both nav and ul containing everything
+seemed like overkill, but it finally worked after banging my
+head against the wall for far too long so I left it.
+
+Also, I still need to set up links from the header to the
+different sections on the page. Right now it's set up as
+if this is a mult-page site. I switched gears yesterday,
+deleted everything, and decided to create a single-page site.
+
+Sidenote: the logo was heavily influenced by my love of hexagons and hatred
+for Beats by Dre headphones. It's borderline plagiarism in its
+current state, please don't kick me out of Turing. Let Dre's
+legal team handle my punishment when I become well-known
+enough for him to care.
+      -->
+
+      <!--
+About
+      -->
+
       <div class="main">
         <div class="title">
-          <!--
-          <img src="img/headshot.jpg" />
-          -->
           <h1>ABOUT</h1>
           <img src="img/user.png" />
         </div>
@@ -34,6 +55,17 @@
         </div>
       </div>
 
+      <!--
+Definitely want to improve the copy on my bio, as well as add
+to it. Want to keep things short and simple, but this is
+poorly worded and vague. Still conveys some information about
+my past, my mindset, and my goals in a couple sentences though.
+      -->
+
+      <!--
+Projects
+      -->
+
       <div class="main">
         <div class="title">
           <h1>PROJECTS</h1>
@@ -43,24 +75,28 @@
             <div class="box">
               <h2>PROJECT 1</h2>
               <a href="http://bus.com" target="_blank"><img src="http://placehold.it/350x150"></a>
-              <p>This is where I'll talk about the project. What I did, what tools I used, what I learned, and how awesome it is! Picture is the link that opens up in a new tab. You're welcome Bree.</p>
+              <p>This is where I'll talk about the project. What I did, what tools I used, what I learned, and why it doesn't suck! IMG is the link that opens up in a new tab. You're welcome Bree.</p>
             </div>
         </div>
         <div class="content">
             <div class="box">
               <h2>PROJECT 2</h2>
               <a href="http://bus.com" target="_blank"><img src="http://placehold.it/350x150"></a>
-              <p>This is where I'll talk about the project. What I did, what tools I used, what I learned, and how awesome it is! Picture is the link that opens up in a new tab. You're welcome Bree.</p>
+              <p>This is where I'll talk about the project. What I did, what tools I used, what I learned, and why it doesn't suck! IMG is the link that opens up in a new tab. You're welcome Bree.</p>
             </div>
         </div>
         <div class="content">
             <div class="box">
               <h2>PROJECT 3</h2>
               <a href="http://bus.com" target="_blank"><img src="http://placehold.it/350x150"></a>
-              <p>This is where I'll talk about the project. What I did, what tools I used, what I learned, and how awesome it is! Picture is the link that opens up in a new tab. You're welcome Bree.</p>
+              <p>This is where I'll talk about the project. What I did, what tools I used, what I learned, and why it doesn't suck! IMG is the link that opens up in a new tab. You're welcome Bree.</p>
             </div>
         </div>
       </div>
+
+      <!--
+Experience
+      -->
 
       <div class="main">
         <div class="title">
@@ -68,19 +104,47 @@
           <img src="img/document.png" />
         </div>
         <div class="content">
-          <p>Minneapolis born and raised, road-taught, Denver-based, Turing School of Software and Design living + breathing, front end developer in training. Create captivating, engaging experiences through music, food + beverage, and the web. Strive to connect individuals to communities through technology. Live simple, travel often, always look to the future. </p>
+          <div class="box">
+            <a href="http://instagram.com/nightshiftdenver" target="_blank"><img src="img/ns-bw.jpg" class="work" ></a>
+            <h2>Systems | Cook</h2>
+            <p class="big">Night Shift</p>
+            <p class="lil">Denver</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="box">
+            <a href="https://www.instagram.com/chasethewhitewhale/" target="_blank"><img src="img/twwr.png" class="work" ></a>
+            <h2>Food Menu | Systems | Network Admin | Bartender</h2>
+            <p class="big">The White Whale Room</p>
+            <p class="lil">Denver</p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="box">
+            <a href="https://www.facebook.com/LetsGetDigitalBlog/" target="_blank"><img src="img/lgd.png" class="work"></a>
+            <h2>Owner | Booking | Web Dev</h2>
+            <p class="big">Let's Get Digital</p>
+            <p class="lil">Minneapolis/Madison/Chicago/Boulder</p>
+          </div>
         </div>
       </div>
 
-      <div class="main">
-        <div class="title">
-          <h1>CONTACT</h1>
-          <img src="img/speech-bubble.png" />
-        </div>
-        <div class="content">
-          <p>Minneapolis born and raised, road-taught, Denver-based, Turing School of Software and Design living + breathing, front end developer in training. Create captivating, engaging experiences through music, food + beverage, and the web. Strive to connect individuals to communities through technology. Live simple, travel often, always look to the future. </p>
-        </div>
-      </div>
+      <!--
+It's midnight, and I just realized I forgot to put my education
+in this section. Would've probably left it out as I'd rather
+have info regarding non-related fields I work/study in on my
+linkedin, but it was a part of the requirements for the project.
+I'll just take the points off at this point so my mind can be fresh
+for tomorrow since Javascript scares me lol.
+
+In the future I'd like to sylize the text, add the dates I worked,
+and git (leaving the spelling error) these box classes to always
+extend to the right border regardless of how much text is in them.
+      -->
+
+      <!--
+Contact (contained in the footer)
+      -->
 
       <footer>
         <ul>
