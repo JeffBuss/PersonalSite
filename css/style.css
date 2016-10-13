@@ -12,13 +12,19 @@ header {
   height: 150px;
   width: 150px;
   margin-left: 20px;
+  float: left;
+}
+
+nav {
+  display: inline-block;
 }
 
 nav li {
   padding: 20px;
-  display: inline-block;
   vertical-align: middle;
   text-shadow: 2px 2px #dadada;
+  float: left;
+  text-align: right;
 }
 
 nav a {
@@ -26,12 +32,15 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   color: black;
+
 }
 
 nav a:hover {
   cursor: pointer;
   color: #836DE8;
 }
+
+
 
 /*Not super pleased with how the header scales
 at narrower screen widths on desktop browsers,
