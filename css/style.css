@@ -12,26 +12,13 @@ header {
   height: 150px;
   width: 150px;
   margin-left: 20px;
-  float: left;
-  display: inline-block;
-}
-
-nav {
-  display: inline-block;
-  float: right;
 }
 
 nav li {
   padding: 20px;
-  vertical-align: middle;
+  display: inline;
   text-shadow: 2px 2px #dadada;
   float: left;
-  text-align: right;
-}
-
-ul > li {
-  display: block;
-  float: right;
 }
 
 nav a {
@@ -39,7 +26,6 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   color: black;
-
 }
 
 nav a:hover {
