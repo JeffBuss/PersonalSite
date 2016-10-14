@@ -16,14 +16,13 @@ header {
 
 nav li {
   padding: 20px;
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
   text-shadow: 2px 2px #dadada;
-  float: left;
 }
 
 nav a {
-  font-size: 38px;
-  font-weight: bold;
+  font-size: 28px;
   text-decoration: none;
   color: black;
 }
@@ -32,8 +31,6 @@ nav a:hover {
   cursor: pointer;
   color: #836DE8;
 }
-
-
 
 /*Not super pleased with how the header scales
 at narrower screen widths on desktop browsers,
